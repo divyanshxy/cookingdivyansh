@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cookbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffa07a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .recipe-card {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .upload-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Cookbook</h1>
+        <p>Discover, upload, share, and print your favorite recipes!</p>
+    </header>
+    <nav>
+        <a href="#recipes">Recipes</a>
+        <a href="#upload">Upload</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2 id="recipes">Curated Recipes</h2>
+        <div class="recipe-card">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A classic Italian pasta dish with creamy sauce, pancetta, and Parmesan cheese.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <h3>Chicken Tikka Masala</h3>
+            <p>A flavorful Indian curry with tender chicken cooked in a creamy tomato sauce.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <h3>Chocolate Brownies</h3>
+            <p>Rich, fudgy brownies perfect for chocolate lovers.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+
+        <h2 id="upload">Upload Your Recipe</h2>
+        <div class="upload-section">
+            <form action="/upload" method="POST">
+                <label for="recipeName">Recipe Name:</label><br>
+                <input type="text" id="recipeName" name="recipeName" required><br><br>
+                <label for="recipeDetails">Recipe Details:</label><br>
+                <textarea id="recipeDetails" name="recipeDetails" rows="5" required></textarea><br><br>
+                <input type="submit" value="Upload Recipe">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Cookbook. All rights reserved.</p<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cookbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffa07a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .recipe-card {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .upload-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Cookbook</h1>
+        <p>Discover, upload, share, and print your favorite recipes!</p>
+    </header>
+    <nav>
+        <a href="#recipes">Recipes</a>
+        <a href="#upload">Upload</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2 id="recipes">Curated Recipes</h2>
+        <div class="recipe-card">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A classic Italian pasta dish with creamy sauce, pancetta, and Parmesan cheese.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <h3>Chicken Tikka Masala</h3>
+            <p>A flavorful Indian curry with tender chicken cooked in a creamy tomato sauce.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <h3>Chocolate Brownies</h3>
+            <p>Rich, fudgy brownies perfect for chocolate lovers.</p>
+            <button onclick="window.print()">Print Recipe</button>
+        </div>
+
+        <h2 id="upload">Upload Your Recipe</h2>
+        <div class="upload-section">
+            <form action="/upload" method="POST">
+                <label for="recipeName">Recipe Name:</label><br>
+                <input type="text" id="recipeName" name="recipeName" required><br><br>
+                <label for="recipeDetails">Recipe Details:</label><br>
+                <textarea id="recipeDetails" name="recipeDetails" rows="5" required></textarea><br><br>
+                <input type="submit" value="Upload Recipe">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Cookbook. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+Fast creat a simple link so that by opening that link this code appears
+    </footer>
+</body>
+</html>
+
+
+
+Fast creat a simple link so that by opening that link this code appears
